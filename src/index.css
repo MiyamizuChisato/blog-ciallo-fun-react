@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --c-scrollbar-thumb: #c4c4c4;
+    --c-scrollbar: #e5e5e5;
+}
+
+html.dark {
+    --c-scrollbar-thumb: #252525;
+    background: #222222;
+    --c-scrollbar: #151515;
+    color-scheme: dark;
+}
+
+::-webkit-scrollbar {
+    background: var(--c-scrollbar);
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: var(--c-scrollbar-thumb);
+}
